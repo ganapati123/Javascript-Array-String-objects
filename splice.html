@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add/remove</title>
+</head>
+<body>
+    <button onclick="adding()">ADD</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="removing()">REMOVE</button>
+     <p id="demo"></p>
+     <script>
+        var fruits =['apple','banana','orange','mango']
+        document.getElementById('demo').innerHTML=fruits;
+
+        function adding(){
+            fruits.splice(2,0,'hello','hi')
+            document.getElementById('demo').innerHTML=fruits
+        }
+        function removing(){
+            fruits.splice(2,1)
+            document.getElementById('demo').innerHTML=fruits
+        }
+     </script>
+</body>
+</html>
